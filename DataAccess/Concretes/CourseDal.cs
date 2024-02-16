@@ -42,6 +42,9 @@ public class CourseDal : ICourseDal
 
     public void Update(Course course)
     {
-        throw new NotImplementedException();
+        Course updatedCourse=new Course();
+        updatedCourse.CourseId = course.CourseId;
+        updatedCourse.CourseName = course.CourseName;
+        updatedCourse.Description = course.Description;
     }
 }

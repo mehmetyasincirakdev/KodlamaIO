@@ -13,7 +13,43 @@ public class InstructorDal : IInstructorDal
     List<Instructor> _instructors;
     public InstructorDal()
     {
-        new Instructor {InstructorId=1,InstructorFirstName="Engin",InstructorLastName="Demiroğ",InstructorEmail="engindemir@gmail" };
+        _instructors = new List<Instructor>
+        {
+            new Instructor
+        {
+            InstructorId = 1,
+            InstructorFirstName = "Engin",
+            InstructorLastName = "Demiroğ",
+            InstructorEmail = "engindemir@gmail.com",
+            // Additional details (optional):
+            // - Years of experience: 15
+            // - Expertise: C#, ASP.NET, SQL Server, software architecture
+        },
+
+            // 2. Ayşe Gül
+        new Instructor
+        {
+            InstructorId = 2,
+            InstructorFirstName = "Ayşe",
+            InstructorLastName = "Gül",
+            InstructorEmail = "aysegul@hotmail.com",
+            // Additional details (optional):
+            // - Years of experience: 8
+            // - Expertise: Java, Spring Boot, React, web development
+        },
+
+        // 3. Ali Yıldırım
+        new Instructor
+        {
+            InstructorId = 3,
+            InstructorFirstName = "Ali",
+            InstructorLastName = "Yıldırım",
+            InstructorEmail = "aliyildirim@yahoo.com",
+            // Additional details (optional):
+            // - Years of experience: 5
+            // - Expertise: Python, data analysis, machine learning, artificial intelligence
+        },
+        };
     }
     public void Add(Instructor instructor)
     {
